@@ -1,0 +1,18 @@
+        <div class="container">
+        
+        <img [src]="User.photo" class="rounded-circle img-thumbnail" alt="profile">
+        <h4>{{User.name}}</h4>
+        <h5>{{User.firstName}}</h5>
+        <h6 [hidden]="User.hide">{{User.age}}</h6>
+        <p>{{User.quote}}</p>
+      
+        <input [(ngModel)] ="User.quote" placeholder="message">
+        
+
+        <br>
+        <br>
+
+        <div class="container" text-align-center>
+        <button (click)="User.hide = !User.hide"> Afficher mon âge</button>
+        </div>
+        </div>
